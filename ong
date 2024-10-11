@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG de Cachorros - Ana Karolyne</title>
+    <style>
+        /* Fonte Importada */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Pacifico&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #fdf6e3;
+            color: #333;
+        }
+
+        header {
+            background-color: #8B4513; /* Marrom */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '🐾';
+            position: absolute;
+            right: -20px;
+            top: 0;
+            font-size: 1em;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .sobre-mim, .sobre-ong, .projetos, .contato, .doe, .adote, .nosso-dogs {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Pacifico', cursive;
+            color: #8B4513;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Projetos */
+        .projetos ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projetos li {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #8B4513;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Contato */
+        .contato p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        /* Doe */
+        .doe button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #8B4513;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        /* Adote */
+        .adote button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        /* Nosso Dogs */
+        .dogs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .dog-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .dog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .dog-card h3 {
+            margin: 10px 0;
+            font-family: 'Pacifico', cursive;
+            color: #8B4513;
+        }
+
+        .dog-card p {
+            padding: 0 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Detalhes de Patinhas */
+        .paw {
+            font-size: 1.5em;
+            margin: 0 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🐾 ONG de Cachorros 🐾</h1>
+        <nav>
+            <a href="#sobre-mim">Sobre Mim</a>
+            <a href="#sobre-ong">Sobre a ONG</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#nosso-dogs">Nosso Dogs</a>
+            <a href="#adote">Adote</a>
+            <a href="#doe">Doe</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="sobre-mim" class="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Eu sou Ana Karolyne Belasque, tenho 16 anos e estudo no 3° ano do ensino médio. Sou apaixonada por animais, especialmente cachorros. Meus hobbies incluem ler, inventar coisas novas, cuidar de animais machucados ou doentes e brincar com eles. Tenho o sonho de fazer faculdade de Educação Física e estou estudando para passar no concurso da polícia.</p>
+    </section>
+
+    <section id="sobre-ong" class="sobre-ong">
+        <h2>Sobre a ONG</h2>
+        <p>A nossa ONG tem como intenção resgatar, cuidar e encontrar novos lares para cachorros que precisam. Trabalhamos com dedicação para garantir o bem-estar dos nossos cães e promover a adoção responsável. Com o seu apoio, podemos expandir nossa estrutura e oferecer ainda mais cuidados e amor para esses animais.</p>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+        <ul>
+            <li>Aumento da estrutura do nosso canil para acomodar mais cachorros com conforto.</li>
+            <li>Implementação de tecnologias para monitorar e cuidar melhor dos nossos dogs.</li>
+            <li>Criação de um parque maior para o lazer e bem-estar dos cachorros.</li>
+        </ul>
+    </section>
+
+    <section id="nosso-dogs" class="nosso-dogs">
+        <h2>Nosso Dogs</h2>
+        <div class="dogs-grid">
+            <!-- Exemplo de cartão de cachorro -->
+            <div class="dog-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Cachorro+1" alt="Cachorro 1">
+                <h3>Bobby</h3>
+                <p>Bobby é um labrador amigável que adora brincar no parque e fazer novos amigos.</p>
+            </div>
+            <div class="dog-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Cachorro+2" alt="Cachorro 2">
+                <h3>Luna</h3>
+                <p>Luna é uma filhote de husky cheia de energia e sempre pronta para uma aventura.</p>
+            </div>
+            <div class="dog-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Cachorro+3" alt="Cachorro 3">
+                <h3>Max</h3>
+                <p>Max é um pastor alemão leal e protetor, excelente companheiro para a família.</p>
+            </div>
+            <div class="dog-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Cachorro+4" alt="Cachorro 4">
+                <h3>Bella</h3>
+                <p>Bella é uma beagle curiosa que adora explorar novos lugares e cheirar tudo ao redor.</p>
+            </div>
+            <!-- Adicione mais cartões conforme necessário -->
+        </div>
+    </section>
+
+    <section id="adote" class="adote">
+        <h2>Adote</h2>
+        <p>Você pode dar um lar cheio de amor para um dos nossos adoráveis cachorros. Clique no botão abaixo para ver os cães disponíveis para adoção.</p>
+        <button onclick="window.location.href='#nosso-dogs'">Ver Dogs Disponíveis</button>
+    </section>
+
+    <section id="doe" class="doe">
+        <h2>Doe</h2>
+        <p>Suas doações são essenciais para continuarmos nosso trabalho. Você pode doar em dinheiro ou em rações para ajudar nossos cachorros.</p>
+        <button onclick="alert('Obrigado pela sua generosidade! Entre em contato para mais informações.')">Doe Agora</button>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Telefone: (43) 99602-2317</p>
+    </section>
+
+    <footer>
+        <p>© 2024 ONG de Cachorros - Ana Karolyne Belasque</p>
+        <p>Feito com ❤️ por Ana</p>
+    </footer>
+
+</body>
+</html>
